@@ -1,0 +1,40 @@
+{
+  "id": "moletaokids-01",
+  "meta": {
+    "title": "蒙特梭利多功能木制百宝箱 (Montessori Multi-functional Wooden Learning Box)",
+    "usp": "多合一早教认知 / FSC 环保原木 / 欧盟 EN71 安全认证",
+    "category": "蒙台梭利教具 / 益智早教玩具",
+    "target_audience": "海外品牌商、早教机构、亚马逊精品卖家",
+    "age_range": "1-3岁, 3-6岁"
+  },
+  "specs": {
+    "dimensions": "30cm × 20cm × 15cm",
+    "weight": "2.2 kg",
+    "material": "FSC 认证欧洲榉木 + 进口椴木多层板",
+    "paint": "德国生态环保水性无毒漆",
+    "compliance": "CE-EN71 Part 1/2/3, ASTM F963, FSC-COC",
+    "moq": "500 套（支持 OEM/ODM 定制包装与Logo雕刻）"
+  },
+  "description": "这款蒙特梭利多功能百宝箱专为 1-6 岁儿童精细动作与逻辑思维训练而设计。集成了形状配对、齿轮传动、数字认知、磁性钓鱼等 6 大核心早教玩法，全面激发幼儿的手眼协调能力与空间想象力。采用天然优质榉木精工细作，边角全圆润打磨处理，无任何毛刺，确保宝宝娇嫩小手安全。所有涂层均采用德国进口食品级水性漆，无气味、不褪色，完美契合欧美家庭对环保与安全的严苛标准。",
+  "applications": [
+    "家庭亲子早教与感统训练",
+    "蒙台梭利幼儿园、托育中心教具配套",
+    "高端母婴礼品与节日礼盒"
+  ],
+  "media_assets": {
+    "main_image": "images/products/montessori-box-main.png",
+    "gallery": [
+      "images/products/montessori-box-detail-1.jpg",
+      "images/products/montessori-box-detail-2.jpg",
+      "images/products/montessori-box-package.jpg"
+    ],
+    "scene": [
+      "images/products/montessori-box-scene-1.jpg"
+    ],
+    "demo_video": "videos/montessori-box-demo.mp4",
+    "attachments": [
+      "docs/montessori-box-specsheet.pdf",
+      "docs/en71-test-report.pdf"
+    ]
+  }
+}

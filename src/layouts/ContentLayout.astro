@@ -1,0 +1,25 @@
+---
+/**
+ * ContentLayout — 内容型页面布局
+ * 适用于：产品列表 / 产品详情 / 客户案例 / 博客 / 法律条款 / 404 / Thank-You
+ * 视觉：bg-muted 浅灰底，区分内容区与白色 Hero 区
+ * 数据驱动：pages.json#products-* / cases-* / blog-* / legal / 404 / thank-you
+ */
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  lang?: string;
+  title?: string;
+  description?: string;
+}
+
+const { lang = 'zh', title, description } = Astro.props;
+---
+<BaseLayout
+  lang={lang}
+  title={title}
+  description={description}
+  bodyClass="bg-muted text-foreground"
+>
+  <slot />
+</BaseLayout>

@@ -1,0 +1,25 @@
+---
+/**
+ * FocusLayout — 沉浸式聚焦布局
+ * 适用于：联系咨询页（Focus on conversion，单点转化漏斗）
+ * 视觉：bg-muted 浅灰底，整页 flex column 撑满视口，footer 始终贴底
+ * 数据驱动：pages.json#contact
+ */
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  lang?: string;
+  title?: string;
+  description?: string;
+}
+
+const { lang = 'zh', title, description } = Astro.props;
+---
+<BaseLayout
+  lang={lang}
+  title={title}
+  description={description}
+  bodyClass="bg-muted flex min-h-screen flex-col justify-between text-foreground"
+>
+  <slot />
+</BaseLayout>

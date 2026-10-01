@@ -1,0 +1,33 @@
+{
+  "$schema": "https://json.schemastore.org/vscode-settings",
+
+  /* === Tailwind CSS 校验规则 === */
+  "css.lint.unknownAtRules": "warning",
+  "scss.lint.unknownAtRules": "warning",
+  "less.lint.unknownAtRules": "warning",
+
+  /* === Tailwind CSS IntelliSense 类名扫描模式 === */
+  /* 让扩展识别 .astro 中的 class:list / class={} */
+  "tailwindCSS.experimental.classRegex": [
+    "class:\\s*['\"]([^'\"]*)['\"]",
+    "class:list=$$([^$$]*)\\]",
+    "class=\\{([^}]*)\\}"
+  ],
+
+  /* === 关联 Astro / Vue / Svelte 的 Tailwind 提示 === */
+  "tailwindCSS.includeLanguages": {
+    "astro": "html",
+    "vue": "html",
+    "svelte": "html"
+  },
+
+  /* === 文件关联：让 .astro 文件用 Tailwind 校验 === */
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+
+  /* === 推荐扩展（可选） === */
+  "extensions.supportUntrustedWorkspaces": {
+    "bradlc.vscode-tailwindcss": true
+  }
+}

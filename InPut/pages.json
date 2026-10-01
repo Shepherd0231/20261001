@@ -1,0 +1,379 @@
+{
+  "landing": {
+    "nameCn": "首页 /落地页",
+    "nameEn": "Landing Page",
+    "route": "/",
+    "layout": "MarketingLayout",
+    "enabled": true,
+    "inNav": false,
+    "meta": {
+      "title": "Moletao Kids | 环保益智木制玩具与蒙台梭利早教教具工厂",
+      "description": "FSC 认证生态木材，双重欧盟 EN71 / 美国 ASTM F963 安全标准，专注婴幼儿早教木制玩具研发智造与全球 OEM/ODM 批发定制。"
+    },
+    "breadcrumbs": null,
+    "sections": [
+      "FullHeader",
+      "Hero",
+      "LogoCloud",
+      "StatsBar",
+      "Features",
+      "HowItWorks",
+      "Testimonials",
+      "FAQ",
+      "BottomCTA",
+      "MegaFooter"
+    ]
+  },
+  "products-index": {
+    "nameCn": "产品列表页",
+    "nameEn": "Products Index",
+    "route": "/products",
+    "layout": "ContentLayout",
+    "enabled": true,
+    "inNav": true,
+    "meta": {
+      "title": "儿童益智木制玩具与蒙台梭利教具目录 | Moletao Kids",
+      "description": "涵盖蒙氏多功能百宝箱、彩虹平衡积木、早教益智拼图与婴幼儿原木玩具，全方位满足海外品牌商与早教机构采购需求。"
+    },
+    "breadcrumbs": [
+      {
+        "label": "首页",
+        "href": "/"
+      },
+      {
+        "label": "产品与教具中心",
+        "href": "/products"
+      }
+    ],
+    "sections": [
+      "FullHeader",
+      "Breadcrumbs",
+      "SolutionsHubHero",
+      "SolutionCategoryNav",
+      "SolutionGrid",
+      "PlatformCapabilities",
+      "BottomCTA",
+      "MegaFooter"
+    ]
+  },
+  "products-detail": {
+    "nameCn": "产品详情页",
+    "nameEn": "Products Detail",
+    "route": "/products/[slug]",
+    "layout": "ContentLayout",
+    "enabled": true,
+    "inNav": false,
+    "meta": {
+      "title": "木制早教玩具详情与安全检测标准 | Moletao Kids",
+      "description": "提供详细的玩具规格尺寸、FSC 环保原木材质证明、德国水性漆检测报告与 EN71 / ASTM 国际合规文件下载。"
+    },
+    "breadcrumbs": [
+      {
+        "label": "首页",
+        "href": "/"
+      },
+      {
+        "label": "产品与教具中心",
+        "href": "/products"
+      },
+      {
+        "label": "玩具规格详情",
+        "href": ""
+      }
+    ],
+    "sections": [
+      "FullHeader",
+      "Breadcrumbs",
+      "SolutionHero",
+      "PainPointsVsSolutions",
+      "TechArchitecture",
+      "UseCasesTab",
+      "RelatedCaseStudyCard",
+      "BottomCTA",
+      "MegaFooter"
+    ]
+  },
+  "case-index": {
+    "nameCn": "客户案例列表页",
+    "nameEn": "Case Index",
+    "route": "/cases",
+    "layout": "ContentLayout",
+    "enabled": true,
+    "inNav": true,
+    "meta": {
+      "title": "全球品牌商合作与早教机构交付案例 | Moletao Kids",
+      "description": "查看我们为欧洲、北美及东南亚知名母婴品牌商与蒙台梭利幼儿园交付的定制木制玩具标杆案例与合作故事。"
+    },
+    "breadcrumbs": [
+      {
+        "label": "首页",
+        "href": "/"
+      },
+      {
+        "label": "客户案例",
+        "href": "/cases"
+      }
+    ],
+    "sections": [
+      "FullHeader",
+      "Breadcrumbs",
+      "CaseFilterBar",
+      "CaseHeroCard",
+      "CaseGrid",
+      "BottomCTA",
+      "MegaFooter"
+    ]
+  },
+  "case-detail": {
+    "nameCn": "客户案例详情页",
+    "nameEn": "Case Detail",
+    "route": "/cases/[slug]",
+    "layout": "ContentLayout",
+    "enabled": true,
+    "inNav": false,
+    "meta": {
+      "title": "海外品牌商定制开发实录详情 | Moletao Kids",
+      "description": "深度解析某欧洲母婴独立站品牌从外观设计、打样测试到 30 天快速量产交付的完整合作实践。"
+    },
+    "breadcrumbs": [
+      {
+        "label": "首页",
+        "href": "/"
+      },
+      {
+        "label": "客户案例",
+        "href": "/cases"
+      },
+      {
+        "label": "合作案例详情",
+        "href": ""
+      }
+    ],
+    "sections": [
+      "FullHeader",
+      "Breadcrumbs",
+      "CaseDetailHeader",
+      "CaseDetailBody",
+      "ExecutiveQuoteBanner",
+      "BottomCTA",
+      "MegaFooter"
+    ]
+  },
+  "about-us": {
+    "nameCn": "关于我们页",
+    "nameEn": "About Us",
+    "route": "/about",
+    "layout": "MarketingLayout",
+    "enabled": true,
+    "inNav": true,
+    "meta": {
+      "title": "关于木乐淘儿童用品 | 11 年专注环保木制玩具智造",
+      "description": "拥有 25,000 ㎡ 生态制造基地、无尘环保水性漆喷涂流水线与 15 人资深儿童玩具设计师团队，致力于把自然安全带给全球儿童。"
+    },
+    "breadcrumbs": [
+      {
+        "label": "首页",
+        "href": "/"
+      },
+      {
+        "label": "关于我们",
+        "href": "/about"
+      }
+    ],
+    "sections": [
+      "FullHeader",
+      "Breadcrumbs",
+      "AboutHero",
+      "Timeline",
+      "TeamGrid",
+      "ComplianceAwards",
+      "BottomCTA",
+      "MegaFooter"
+    ]
+  },
+  "pricing": {
+    "nameCn": "定价页",
+    "nameEn": "Pricing Page",
+    "route": "/pricing",
+    "layout": "MarketingLayout",
+    "enabled": true,
+    "inNav": true,
+    "meta": {
+      "title": "OEM/ODM 批发阶梯报价与定制方案 | Moletao Kids",
+      "description": "透明的玩具小批量试制与大货阶梯报价体系，支持专属定制包装、Logo 激光雕刻及 7 天快速打样服务。"
+    },
+    "breadcrumbs": [
+      {
+        "label": "首页",
+        "href": "/"
+      },
+      {
+        "label": "批发与定价方案",
+        "href": "/pricing"
+      }
+    ],
+    "sections": [
+      "FullHeader",
+      "Breadcrumbs",
+      "PricingHeader",
+      "TierCards",
+      "FeatureComparisonTable",
+      "PricingFAQ",
+      "BottomCTA",
+      "MegaFooter"
+    ]
+  },
+  "contact": {
+    "nameCn": "联系咨询页",
+    "nameEn": "Contact",
+    "route": "/contact",
+    "layout": "FocusLayout",
+    "enabled": true,
+    "inNav": true,
+    "meta": {
+      "title": "联系工厂索取样品与报价 (RFQ) | Moletao Kids",
+      "description": "联系我们的海外业务团队，获取最新产品目录、EN71 资质证书或预约 7 天快速定制打样服务。"
+    },
+    "breadcrumbs": null,
+    "sections": [
+      "MinimalHeader",
+      "SplitContactSection",
+      "DirectSupportChannels",
+      "CompactFooter"
+    ]
+  },
+  "blog-index": {
+    "nameCn": "博客列表页",
+    "nameEn": "Blog Index",
+    "route": "/blog",
+    "layout": "ContentLayout",
+    "enabled": true,
+    "inNav": true,
+    "meta": {
+      "title": "早教洞察与玩具出海资讯 | Moletao Kids",
+      "description": "分享蒙台梭利教育理念、儿童感统训练方法、欧盟玩具安全标准（EN71）解读及全球母婴玩具市场趋势。"
+    },
+    "breadcrumbs": [
+      {
+        "label": "首页",
+        "href": "/"
+      },
+      {
+        "label": "早教与行业资讯",
+        "href": "/blog"
+      }
+    ],
+    "sections": [
+      "FullHeader",
+      "Breadcrumbs",
+      "FeaturedPost",
+      "CategoryNav",
+      "ArticleGrid",
+      "Pagination",
+      "NewsletterSection",
+      "MegaFooter"
+    ]
+  },
+  "blog-post": {
+    "nameCn": "博客文章页",
+    "nameEn": "Blog Post",
+    "route": "/blog/[slug]",
+    "layout": "ContentLayout",
+    "enabled": true,
+    "inNav": false,
+    "meta": {
+      "title": "文章详情 | Moletao Kids 早教与行业资讯",
+      "description": "深入探讨木制玩具水性漆环保标准、儿童空间思维培养及跨境电商玩具选品指南。"
+    },
+    "breadcrumbs": [
+      {
+        "label": "首页",
+        "href": "/"
+      },
+      {
+        "label": "早教与行业资讯",
+        "href": "/blog"
+      },
+      {
+        "label": "文章正文",
+        "href": ""
+      }
+    ],
+    "sections": [
+      "ProgressHeader",
+      "Breadcrumbs",
+      "ArticleHeader",
+      "ArticleBodyWrapper",
+      "ArticleFooterBar",
+      "AuthorBioCard",
+      "RelatedPosts",
+      "BottomCTA",
+      "MegaFooter"
+    ]
+  },
+  "legal": {
+    "nameCn": "法律条/ 隐私协议页",
+    "nameEn": "Legal & Privacy",
+    "route": "/legal/[slug]",
+    "layout": "ContentLayout",
+    "enabled": true,
+    "inNav": false,
+    "meta": {
+      "title": "法律合规声明与隐私条款 | Moletao Kids",
+      "description": "木乐淘儿童用品严格遵守国际知识产权保护法规、儿童用品安全合规标准及全球买家隐私保护条例。"
+    },
+    "breadcrumbs": [
+      {
+        "label": "首页",
+        "href": "/"
+      },
+      {
+        "label": "法律与隐私",
+        "href": "/legal"
+      }
+    ],
+    "sections": [
+      "FullHeader",
+      "Breadcrumbs",
+      "LegalHeader",
+      "LegalLayoutWrapper",
+      "CompactFooter"
+    ]
+  },
+  "404": {
+    "nameCn": "404 错误页",
+    "nameEn": "404 Not Found",
+    "route": "/404",
+    "layout": "ContentLayout",
+    "enabled": true,
+    "inNav": false,
+    "meta": {
+      "title": "页面未找到 (404 Not Found) | Moletao Kids",
+      "description": "抱歉，您访问的页面不存在或已被移除。请返回产品中心查看最新环保益智木制玩具。"
+    },
+    "breadcrumbs": null,
+    "sections": [
+      "MinimalHeader",
+      "NotFoundSection",
+      "MinimalFooter"
+    ]
+  },
+  "thank-you": {
+    "nameCn": "操作成功 / 感谢页",
+    "nameEn": "Thank You / Success",
+    "route": "/thank-you",
+    "layout": "ContentLayout",
+    "enabled": true,
+    "inNav": false,
+    "meta": {
+      "title": "询盘与需求已成功提交 | Moletao Kids",
+      "description": "感谢您的咨询！我们的客户经理与玩具设计师已收到您的需求，将在 24 小时内向您回寄产品样品目录与批发报价单。"
+    },
+    "breadcrumbs": null,
+    "sections": [
+      "MinimalHeader",
+      "SuccessSection",
+      "MinimalFooter"
+    ]
+  }
+}

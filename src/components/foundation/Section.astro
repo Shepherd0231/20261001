@@ -1,0 +1,105 @@
+---
+/**
+ * Section — Foundation 层通用 section 包裹器
+ *
+ * 职责：
+ *  - 实现"三明治容器法则"：外层 w-full 撑满背景，内层 <Container> 约束内容宽度
+ *  - 垂直节奏（padding-top + padding-bottom 统一档位）
+ *  - 背景 token 切换（transparent / background / muted / card / inverse）
+ *  - 与 pages.json / components.json 完全解耦
+ *
+ * 设计原则（未来 JSON 演进不影响本组件）：
+ *  - 不读取任何 JSON schema 字段
+ *  - 所有视觉参数通过 props 显式传入
+ *  - 默认值符合 B2B 站标准节奏
+ *
+ * 用法：
+ *   <Section id="features">
+ *     <Container>
+ *       <h2>...</h2>
+ *     </Container>
+ *   </Section>
+ *
+ *   <Section background="muted" containerMaxWidth="6xl">
+ *     ...
+ *   </Section>
+ */
+
+import Container from './Container.astro';
+
+type SectionTag = 'section' | 'div' | 'article' | 'aside';
+type PaddingLevel = 'none' | 'sm' | 'md' | 'lg' | 'xl' | '2xl';
+type BgLevel = 'transparent' | 'background' | 'muted' | 'card' | 'inverse';
+
+interface Props {
+  /** 锚点 ID（用于导航跳转） */
+  id?: string;
+  /** 渲染标签（默认 section） */
+  as?: SectionTag;
+  /** 背景 token（默认 transparent，让 body 颜色透出） */
+  background?: BgLevel;
+  /** 垂直内边距档位 */
+  padding?: PaddingLevel;
+  /** Container 最大宽度 */
+  containerMaxWidth?: string;
+  /** 是否禁用内层 Container（用于全宽子内容如 grid 满屏） */
+  contained?: boolean;
+  /** 容器内额外类 */
+  containerClass?: string;
+  /** Section 外层附加类 */
+  class?: string;
+  /** 是否在顶部添加分隔线 */
+  divider?: boolean;
+}
+
+const {
+  id,
+  as: Tag = 'section',
+  background = 'transparent',
+  padding = 'lg',
+  containerMaxWidth = '7xl',
+  contained = true,
+  containerClass = '',
+  class: className = '',
+  divider = false,
+} = Astro.props;
+
+const bgMap: Record<BgLevel, string> = {
+  transparent: '',
+  background: 'bg-background',
+  muted: 'bg-muted',
+  card: 'bg-card',
+  inverse: 'bg-inverse-bg text-inverse-fg',
+};
+
+const padMap: Record<PaddingLevel, string> = {
+  none: '',
+  sm: 'py-8 md:py-10',
+  md: 'py-12 md:py-16',
+  lg: 'py-16 md:py-20 lg:py-24',
+  xl: 'py-20 md:py-24 lg:py-32',
+  '2xl': 'py-24 md:py-32 lg:py-40',
+};
+
+const outerCls = [
+  'w-full',
+  'relative',
+  bgMap[background],
+  padMap[padding],
+  divider ? 'border-t border-border' : '',
+  className,
+]
+  .filter(Boolean)
+  .join(' ');
+---
+<Tag id={id} data-section-root class={outerCls}>
+  {contained ? (
+    <Container maxWidth={containerMaxWidth} class={containerClass}>
+      <slot />
+    </Container>
+  ) : (
+    <div class:list={['mx-auto w-full', containerMaxWidth === 'full' ? 'max-w-full' : `max-w-${containerMaxWidth}`]}>
+      <slot />
+    </div>
+  )}
+</Tag>

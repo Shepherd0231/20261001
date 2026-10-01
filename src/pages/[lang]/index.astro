@@ -1,0 +1,26 @@
+---
+import MarketingLayout from '../../layouts/MarketingLayout.astro';
+import { getPageConfig } from '../../utils/data';
+
+export function getStaticPaths() {
+  return [
+    { params: { lang: 'zh' } },
+    { params: { lang: 'en' } },
+  ];
+}
+
+const lang = (Astro.params.lang === 'en' ? 'en' : 'zh') as 'zh' | 'en';
+const page = getPageConfig(lang, 'landing');
+
+const title = page?.meta?.title ?? 'Moletao Kids';
+const description = page?.meta?.description ?? '环保益智木制玩具工厂';
+---
+<MarketingLayout lang={lang} title={title} description={description}>
+  <main class="container-app py-16">
+    <h1 class="text-3xl font-bold text-foreground">{title}</h1>
+    <p class="mt-4 text-muted-foreground">{description}</p>
+    <p class="mt-8 text-sm text-muted-foreground">
+      当前语言：<code class="rounded bg-muted px-2 py-1">{lang}</code> · 路由：<code class="rounded bg-muted px-2 py-1">/{lang}/</code>
+    </p>
+  </main>
+</MarketingLayout>

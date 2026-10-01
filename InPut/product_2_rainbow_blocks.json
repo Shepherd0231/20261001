@@ -1,0 +1,40 @@
+{
+  "id": "moletaokids-02",
+  "meta": {
+    "title": "彩虹大颗粒木制平衡积木 (Rainbow Balance Building Blocks)",
+    "usp": "大颗粒防吞咽 / 开放式玩法 / 创意色彩启蒙",
+    "category": "积木与拼装玩具 / 益智玩具",
+    "target_audience": "玩具品牌批发商、独立站 DTC 卖家、儿童早教中心",
+    "age_range": "2-8岁"
+  },
+  "specs": {
+    "dimensions": "包装尺寸：35cm × 25cm × 8cm（包含 50 粒异形积木）",
+    "weight": "1.8 kg",
+    "material": "天然优质松木与环保硬木",
+    "paint": "多色环保马卡龙水性安全漆",
+    "compliance": "CE-EN71, ASTM F963, CPSIA",
+    "moq": "300 套（支持定制潘通色号与专属礼盒）"
+  },
+  "description": "这套彩虹平衡积木打破传统方块的局限，采用独具匠心的几何与自然仿生造型，搭配温润柔和的莫兰迪马卡龙色系。孩子们可以通过自由叠搭、平衡挑战，锻炼空间逻辑感与专注力。每一块积木均经过数控精密裁切与人工手感打磨，拥有如婴儿肌肤般的温润触感。开放式的玩法不设边界，既能独立拼搭，也能多人协作，是培养儿童社交能力与创造力的绝佳教具。",
+  "applications": [
+    "儿童空间思维与平衡力培养",
+    "幼儿园建构区与益智区教学道具",
+    "海外跨境电商畅销礼品与节日爆款"
+  ],
+  "media_assets": {
+    "main_image": "images/products/rainbow-blocks-main.png",
+    "gallery": [
+      "images/products/rainbow-blocks-detail-1.jpg",
+      "images/products/rainbow-blocks-detail-2.jpg",
+      "images/products/rainbow-blocks-box.jpg"
+    ],
+    "scene": [
+      "images/products/rainbow-blocks-scene-1.jpg"
+    ],
+    "demo_video": "videos/rainbow-blocks-demo.mp4",
+    "attachments": [
+      "docs/rainbow-blocks-specsheet.pdf",
+      "docs/astm-f963-report.pdf"
+    ]
+  }
+}

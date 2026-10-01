@@ -1,0 +1,118 @@
+---
+/**
+ * SmartImage — Foundation 层多媒体封装组件
+ *
+ * 职责：
+ *  - 自动应用现代 <img> 最佳实践（lazy / async decode / fetchpriority）
+ *  - 响应式 srcset + sizes
+ *  - 防 CLS（强制 width/height）
+ *  - aspect-ratio 占位（避免布局抖动）
+ *  - object-fit 全语义覆盖
+ *  - 占位底色（背景 token，图片加载前不空）
+ *
+ * 颜色 Token：
+ *  - 占位背景：bg-muted
+ *  - 错误底色：bg-muted
+ *  - 文字 fallback：text-muted-foreground
+ *
+ * 不做的事：
+ *  - 不内置调色板（圆角 / 阴影由父容器 className 决定）
+ *  - 不做暗色模式（避免 model0925 教训）
+ */
+
+interface Props {
+  /** 图像 URL（绝对路径 /public/ 开头以 / 或远程 https://） */
+  src: string;
+  /** 替代文本（必填，无障碍） */
+  alt: string;
+  /** 宽度（必填，防 CLS） */
+  width: number;
+  /** 高度（必填，防 CLS） */
+  height: number;
+  /** 是否立即加载（默认 lazy；首屏 hero 设为 eager） */
+  loading?: 'eager' | 'lazy';
+  /** 解码模式（默认 async） */
+  decoding?: 'async' | 'sync' | 'auto';
+  /** 资源加载优先级 */
+  fetchpriority?: 'high' | 'low' | 'auto';
+  /** object-fit（默认 cover） */
+  fit?: 'cover' | 'contain' | 'fill' | 'none' | 'scale-down';
+  /** Tailwind aspect-ratio 类（aspect-video / aspect-square / aspect-[3/2] 等） */
+  aspect?: string;
+  /** 响应式 sizes 属性 */
+  sizes?: string;
+  /** 多分辨率 srcset（与 src 拼接） */
+  srcset?: string;
+  /** 是否应用 hover 缩放（默认 false） */
+  hoverZoom?: boolean;
+  /** 占位背景 token class（默认 bg-muted） */
+  placeholder?: string;
+  /** 附加类 */
+  class?: string;
+  /** picture 标签 <source> media 属性（备用） */
+  media?: string;
+}
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  loading = 'lazy',
+  decoding = 'async',
+  fetchpriority = 'auto',
+  fit = 'cover',
+  aspect = '',
+  sizes,
+  srcset,
+  hoverZoom = false,
+  placeholder = 'bg-muted',
+  class: className = '',
+  media,
+} = Astro.props;
+
+// 构建 className
+const cls = [
+  'block',
+  'w-full',
+  'h-full',
+  `object-${fit}`,
+  hoverZoom ? 'transition-transform duration-500 ease-out group-hover:scale-[1.03]' : '',
+  aspect,
+  className,
+]
+  .filter(Boolean)
+  .join(' ');
+---
+<figure class:list={['relative overflow-hidden', placeholder, aspect]}>
+  {media ? (
+    <picture>
+      <source media={media} srcset={srcset ?? src} sizes={sizes} />
+      <img
+        src={src}
+        srcset={srcset}
+        sizes={sizes}
+        alt={alt}
+        width={width}
+        height={height}
+        loading={loading}
+        decoding={decoding}
+        fetchpriority={fetchpriority}
+        class={cls}
+      />
+    </picture>
+  ) : (
+    <img
+      src={src}
+      srcset={srcset}
+      sizes={sizes}
+      alt={alt}
+      width={width}
+      height={height}
+      loading={loading}
+      decoding={decoding}
+      fetchpriority={fetchpriority}
+      class={cls}
+    />
+  )}
+</figure>

@@ -1,0 +1,138 @@
+---
+/**
+ * SmartVideo — Foundation 层多媒体封装组件
+ *
+ * 职责：
+ *  - 多格式回退（mp4 / webm）
+ *  - poster 封面占位（避免首帧黑屏）
+ *  - 移动端静音自动播放
+ *  - 性能：preload / lazy 属性
+ *  - 暂停离屏视频（IntersectionObserver，避免后台播视频耗电）
+ *  - aspect-ratio 占位（避免布局抖动）
+ *
+ * 颜色 Token：
+ *  - 占位背景：bg-muted
+ *  - 控制条颜色：浏览器原生
+ *
+ * 不做的事：
+ *  - 不引入第三方播放器（保持零 JS 依赖）
+ *  - 不做暗色模式（避免 model0925 教训）
+ */
+
+interface Props {
+  /** 主视频 URL（mp4 / webm） */
+  src: string;
+  /** 备用格式 URL */
+  webmSrc?: string;
+  /** 封面图 URL（必填，避免首帧黑屏） */
+  posterUrl: string;
+  /** 是否自动播放（默认 false；自动播放需 muted） */
+  autoplay?: boolean;
+  /** 是否循环 */
+  loop?: boolean;
+  /** 是否静音（autoplay 必须为 true） */
+  muted?: boolean;
+  /** 是否显示原生控制条 */
+  controls?: boolean;
+  /** 预加载策略（默认 metadata） */
+  preload?: 'none' | 'metadata' | 'auto';
+  /** 视频宽度（防 CLS） */
+  width?: number;
+  /** 视频高度（防 CLS） */
+  height?: number;
+  /** Tailwind aspect-ratio 类（aspect-video / aspect-square / aspect-[3/2]） */
+  aspect?: string;
+  /** 占位背景 token class（默认 bg-muted） */
+  placeholder?: string;
+  /** 无障碍标签（默认 "演示视频"） */
+  ariaLabel?: string;
+  /** 附加类 */
+  class?: string;
+  /** 是否离屏暂停（默认 true） */
+  pauseOffscreen?: boolean;
+}
+
+const {
+  src,
+  webmSrc,
+  posterUrl,
+  autoplay = false,
+  loop = false,
+  muted = false,
+  controls = true,
+  preload = 'metadata',
+  width,
+  height,
+  aspect = 'aspect-video',
+  placeholder = 'bg-muted',
+  ariaLabel = '演示视频',
+  class: className = '',
+  pauseOffscreen = true,
+} = Astro.props;
+
+// 自动播放时必须静音
+const finalMuted = muted || autoplay;
+const finalAutoplay = autoplay && finalMuted;
+
+const cls = [
+  'block',
+  'w-full',
+  'h-full',
+  'object-cover',
+  aspect,
+  className,
+]
+  .filter(Boolean)
+  .join(' ');
+---
+<figure class:list={['relative overflow-hidden', placeholder, aspect]}>
+  <video
+    src={src}
+    poster={posterUrl}
+    autoplay={finalAutoplay}
+    loop={loop}
+    muted={finalMuted}
+    controls={controls}
+    preload={preload}
+    width={width}
+    height={height}
+    aria-label={ariaLabel}
+    class={cls}
+    data-pause-offscreen={pauseOffscreen ? 'true' : 'false'}
+  >
+    {webmSrc && <source src={webmSrc} type="video/webm" />}
+    <source src={src} type="video/mp4" />
+    <p class="p-4 text-sm text-muted-foreground">
+      您的浏览器不支持 HTML5 视频。请
+      <a href={src} class="underline">下载视频</a> 查看。
+    </p>
+  </video>
+</figure>
+
+{pauseOffscreen && (
+  <script>
+    /**
+     * 离屏暂停视频：IntersectionObserver 监听可见性
+     * 节省电量和带宽（按 hero 视频、背景视频最佳实践）
+     */
+    document.querySelectorAll<HTMLVideoElement>('video[data-pause-offscreen="true"]').forEach((v) => {
+      if (!('IntersectionObserver' in window)) return;
+      const obs = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              if (v.hasAttribute('data-want-play')) v.play().catch(() => {});
+            } else {
+              if (!v.paused) {
+                v.setAttribute('data-want-play', '');
+                v.pause();
+              }
+            }
+          });
+        },
+        { threshold: 0.25 }
+      );
+      obs.observe(v);
+    });
+  </script>
+)}

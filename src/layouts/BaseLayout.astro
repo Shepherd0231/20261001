@@ -1,0 +1,67 @@
+---
+/**
+ * BaseLayout — 全站最底层布局骨架
+ * 职责：
+ *  - HTML 根结构与 <head> 元数据
+ *  - 全局 CSS（含 Tailwind v4 + Design Tokens）注入
+ *  - 字体加载 (Plus Jakarta Sans)
+ *  - 不硬编码 body 颜色，子 layout 自由继承并覆盖 bodyClasses
+ * Props:
+ *  - lang?: string       多语言代码（zh / en）
+ *  - title?: string      <title> 与 og:title
+ *  - description?: string  meta description / og:description
+ *  - bodyClass?: string   附加到 body 的类名（子 layout 覆盖）
+ */
+import '../styles/global.css';
+
+interface Props {
+  lang?: string;
+  title?: string;
+  description?: string;
+  bodyClass?: string;
+}
+
+const {
+  lang = 'zh',
+  title = 'Moletao Kids',
+  description = '环保益智木制玩具与蒙台梭利早教教具工厂',
+  bodyClass = '',
+} = Astro.props;
+---
+<!doctype html>
+<html lang={lang} class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+
+    <title>{title}</title>
+    <meta name="description" content={description} />
+
+    {/* Open Graph */}
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:locale" content={lang === 'zh' ? 'zh_CN' : 'en_US'} />
+
+    {/* Twitter Card */}
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+
+    {/* Favicon */}
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" href="/favicon.ico" />
+
+    {/* Fonts — Plus Jakarta Sans (300/400/500/600/700) */}
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class:list={['antialiased', bodyClass]}>
+    <slot />
+  </body>
+</html>

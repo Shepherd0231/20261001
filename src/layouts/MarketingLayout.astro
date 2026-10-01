@@ -1,0 +1,25 @@
+---
+/**
+ * MarketingLayout — 营销型页面布局
+ * 适用于：首页（Landing）、关于我们、定价页
+ * 视觉：bg-background 纯白底，宽松布局
+ * 数据驱动：pages.json#landing / about / pricing
+ */
+import BaseLayout from './BaseLayout.astro';
+
+interface Props {
+  lang?: string;
+  title?: string;
+  description?: string;
+}
+
+const { lang = 'zh', title, description } = Astro.props;
+---
+<BaseLayout
+  lang={lang}
+  title={title}
+  description={description}
+  bodyClass="bg-background text-foreground"
+>
+  <slot />
+</BaseLayout>

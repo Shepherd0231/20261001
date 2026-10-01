@@ -1,0 +1,1245 @@
+{
+  "FullHeader": {
+    "brand": {
+      "name": "Moletao Kids",
+      "logoUrl": "/images/brand/logo.svg",
+      "href": "/"
+    },
+    "navItems": [
+      {
+        "label": "产品与教具",
+        "href": "/products",
+        "hasDropdown": true,
+        "children": [
+          {
+            "title": "蒙台梭利教具系列",
+            "desc": "精细动作与逻辑思维早教木制玩具",
+            "href": "/products/montessori-series",
+            "icon": "Puzzle"
+          },
+          {
+            "title": "生态原木大颗粒积木",
+            "desc": "莫兰迪马卡龙色系，开放式平衡积木",
+            "href": "/products/balance-blocks",
+            "icon": "Layers"
+          },
+          {
+            "title": "婴幼儿感统训练玩具",
+            "desc": "FSC 环保原木与无毒水性漆安全陪伴",
+            "href": "/products/toddler-toys",
+            "icon": "Smile"
+          },
+          {
+            "title": "OEM / ODM 定制专区",
+            "desc": "支持专属包装、Logo 激光雕刻与打样",
+            "href": "/products/custom-oem",
+            "icon": "Wrench"
+          }
+        ]
+      },
+      {
+        "label": "客户交付",
+        "href": "/cases"
+      },
+      {
+        "label": "批发定价",
+        "href": "/pricing"
+      },
+      {
+        "label": "关于我们",
+        "href": "/about"
+      },
+      {
+        "label": "早教资讯",
+        "href": "/blog"
+      }
+    ],
+    "actions": {
+      "phone": "+86 (578) 6688-8888",
+      "primaryCta": {
+        "label": "索取产品目录与样品",
+        "href": "/contact",
+        "variant": "primary"
+      }
+    }
+  },
+  "Hero": {
+    "badge": {
+      "text": "FSC 森林认证生态工厂 & 欧盟 EN71 / ASTM 双重标准",
+      "icon": "Award"
+    },
+    "headline": "环保益智木制玩具与蒙台梭利教具智造",
+    "headlineHighlight": "自然原木触感，严苛安全标准",
+    "subheadline": "专注婴幼儿早教木制玩具研发与全球 OEM/ODM 智造。拥有 25,000 ㎡ 生态制造基地与无尘水性漆喷涂流水线，提供 7 天快速打样与中小批量定制服务。",
+    "ctas": {
+      "primary": {
+        "label": "获取最新批发价目表与样品",
+        "href": "/contact",
+        "icon": "UploadCloud"
+      },
+      "secondary": {
+        "label": "探索生态工厂与质检标准",
+        "href": "/about",
+        "icon": "PlayCircle"
+      }
+    },
+    "visual": {
+      "type": "video",
+      "videoUrl": "/videos/toy-making-showcase.mp4",
+      "posterUrl": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=1200&q=80",
+      "floatingStats": {
+        "tag": "环保涂层标准",
+        "value": "德国水性漆",
+        "status": "normal"
+      }
+    }
+  },
+  "LogoCloud": {
+    "caption": "产品远销欧美及东南亚，深受全球 40+ 母婴品牌与早教机构信赖",
+    "logos": [
+      {
+        "name": "Hape Style Partner",
+        "logoUrl": "/images/logos/partner-1.svg"
+      },
+      {
+        "name": "Melissa & Doug Co.",
+        "logoUrl": "/images/logos/partner-2.svg"
+      },
+      {
+        "name": "Montessori Global",
+        "logoUrl": "/images/logos/partner-3.svg"
+      },
+      {
+        "name": "KidKraft Supply",
+        "logoUrl": "/images/logos/partner-4.svg"
+      },
+      {
+        "name": "Mothercare Select",
+        "logoUrl": "/images/logos/partner-5.svg"
+      }
+    ]
+  },
+  "StatsBar": {
+    "items": [
+      {
+        "value": "25,000 ㎡",
+        "label": "生态木制玩具智造基地",
+        "desc": "现代化恒温木料养护与无尘车间"
+      },
+      {
+        "value": "100%",
+        "label": "FSC 认证与环保原木",
+        "desc": "严选欧洲榉木与进口优质椴木多层板"
+      },
+      {
+        "value": "EN71 / ASTM",
+        "label": "国际双重安全合规",
+        "desc": "重金属迁移与小零件物理抗拉测试"
+      },
+      {
+        "value": "11 年",
+        "label": "专注儿童木制玩具外贸",
+        "desc": "服务全球百大母婴独立站与早教机构"
+      }
+    ]
+  },
+  "Features": {
+    "header": {
+      "badge": "精工智造与核心优势",
+      "title": "将自然安全与蒙台梭利教育理念完美融合",
+      "subtitle": "从原木科学烘干到无毒水性漆喷涂，每一道工序都只为守护宝宝娇嫩的成长每一步。"
+    },
+    "items": [
+      {
+        "id": "feat-1",
+        "title": "FSC 认证生态原木与精细倒角",
+        "desc": "采用天然优质榉木与松木，经多道人工与数控精密打磨，确保全圆润无毛刺，呵护宝宝娇嫩小手。",
+        "icon": "Cpu",
+        "colSpan": 2,
+        "image": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1200&q=80"
+      },
+      {
+        "id": "feat-2",
+        "title": "德国进口食品级环保水性漆",
+        "desc": "色彩温润柔和不刺眼，无气味、不褪色，符合严苛的欧盟 EN71-3 重金属迁移安全标准。",
+        "icon": "Layers",
+        "colSpan": 1
+      },
+      {
+        "id": "feat-3",
+        "title": "多维感官认知与蒙氏早教体系",
+        "desc": "由资深儿童教育专家领衔研发，寓教于乐，全面激发幼儿的空间思维、色彩辨识与手眼协调能力。",
+        "icon": "CheckCircle2",
+        "colSpan": 1
+      },
+      {
+        "id": "feat-4",
+        "title": "7 天快速打样与灵活 ODM/OEM 定制",
+        "desc": "支持定制专属潘通色号、包装礼盒与品牌 Logo 激光雕刻，助力跨境电商买家打造爆款矩阵。",
+        "icon": "Zap",
+        "colSpan": 2,
+        "image": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=1200&q=80"
+      }
+    ]
+  },
+  "HowItWorks": {
+    "header": {
+      "badge": "高效合作流程",
+      "title": "定制开发与大货批量交付全记录",
+      "subtitle": "标准化外贸服务流程，从需求沟通到全球海运直达全程透明高效。"
+    },
+    "steps": [
+      {
+        "stepNumber": "01",
+        "title": "需求沟通与方案确认",
+        "desc": "提交产品意向、材质要求或定制包装图纸，专业业务经理 2小时内对接并出具初步报价。",
+        "tag": "快速响应"
+      },
+      {
+        "stepNumber": "02",
+        "title": "样品打样与安全检测",
+        "desc": "7 天内完成首件打样并邮寄给客户，支持第三方实验室（SGS/TÜV）安全性抽样测试。",
+        "tag": "7天交样"
+      },
+      {
+        "stepNumber": "03",
+        "title": "大货生产与全球出海",
+        "desc": "无尘车间规模化量产，严格执行 AQL 质检标准，支持海运、空运及海外仓一件代发。",
+        "tag": "全球交付"
+      }
+    ]
+  },
+  "Testimonials": {
+    "header": {
+      "badge": "客户口碑与证言",
+      "title": "全球母婴品牌商与早教机构的真实评价",
+      "subtitle": "来自欧洲、北美独立站卖家与蒙台梭利托育中心负责人的反馈。"
+    },
+    "items": [
+      {
+        "quote": "木乐淘为我们独立站定制的蒙台梭利多功能百宝箱在欧洲一经推出就成了当季爆款。他们的德国水性漆无异味、做工极为细腻，买家好评率高达 99.4%。",
+        "authorName": "Sophie Laurent",
+        "authorTitle": "高级采购总监",
+        "companyName": "法国某知名母婴童品零售集团",
+        "avatarUrl": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+        "metricResult": "单季销售突破 3 万套 / 零客诉"
+      },
+      {
+        "quote": "我们幼儿园的托育教室全部选用了木乐淘的彩虹平衡积木和早教教具。孩子们非常喜欢，家长对 FSC 环保原木的安全品质也极为放心。",
+        "authorName": "Michael Brown",
+        "authorTitle": "创始人兼学术园长",
+        "companyName": "北美蒙台梭利幼儿教育中心",
+        "avatarUrl": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+        "metricResult": "全园教具升级 / 老师高度认可"
+      }
+    ]
+  },
+  "FAQ": {
+    "header": {
+      "badge": "采购与合作答疑",
+      "title": "常见咨询与商务指南",
+      "subtitle": "针对海外采购商在环保认证、MOQ 门槛、定制包装及物流条款中最关切的问题。"
+    },
+    "items": [
+      {
+        "question": "木制玩具拥有哪些国际安全与环保认证？",
+        "answer": "我们所有出口玩具均严格符合欧盟 CE-EN71 (Part 1/2/3)、美国 ASTM F963 及 CPSIA 标准，木材原料 100% 具备 FSC 森林管理委员会认证，并可提供 SGS 或 TÜV 检测报告。"
+      },
+      {
+        "question": "小批量定制或 OEM/ODM 的起订量 (MOQ) 是多少？",
+        "answer": "常规标准款支持 300 套起订；若需定制专属潘通色号、礼盒包装或 Logo 激光雕刻，通常 MOQ 为 500 套起，我们支持灵活的小批量试产以帮助您测试市场反应。"
+      },
+      {
+        "question": "样品制作和批量大货的交付周期通常需要多久？",
+        "answer": "常规样品可在 7 天内完成打样并快递寄出；批量大货生产周期一般为 20-25 个工作日（具体视订单复杂程度与数量而定），支持海运 FOB/CIF 及 DDP 到门服务。"
+      },
+      {
+        "question": "如何保障运输过程中的产品完好与防潮？",
+        "answer": "我们采用双层加厚出口级楞纸外箱，内衬珍珠棉与防潮真空膜包裹，确保长途海运或空运过程中玩具不受潮、不变形、无碰撞损伤。"
+      }
+    ]
+  },
+  "BottomCTA": {
+    "headline": "即刻开启您的环保木制玩具定制与批发合作",
+    "subheadline": "联系我们获取最新全套高清产品目录、电子样品册及针对新买家的阶梯优惠报价。",
+    "primaryCta": {
+      "label": "立即索取样品与目录册",
+      "href": "/contact",
+      "variant": "primary"
+    },
+    "secondaryCta": {
+      "label": "WhatsApp 实时直联业务经理",
+      "href": "https://wa.me/8613812345678",
+      "variant": "secondary"
+    },
+    "trustBadges": [
+      {
+        "text": "100% FSC 认证生态原木",
+        "icon": "ShieldCheck"
+      },
+      {
+        "text": "符合 EN71 & ASTM 双重标准",
+        "icon": "CheckCircle2"
+      },
+      {
+        "text": "支持 7 天快速打样与定制",
+        "icon": "Award"
+      }
+    ]
+  },
+  "MegaFooter": {
+    "brand": {
+      "name": "Moletao Kids",
+      "tagline": "把自然的纯净与安全带给全球儿童",
+      "description": "浙江木乐淘儿童用品有限公司，拥有 25,000 ㎡ 生态制造基地与无尘水性漆喷涂线，专注蒙台梭利教具与环保木制玩具全球 OEM/ODM 智造。"
+    },
+    "columns": [
+      {
+        "title": "产品与教具",
+        "links": [
+          {
+            "label": "蒙台梭利百宝箱系列",
+            "href": "/products/montessori-series"
+          },
+          {
+            "label": "彩虹平衡积木专区",
+            "href": "/products/balance-blocks"
+          },
+          {
+            "label": "婴幼儿感统早教玩具",
+            "href": "/products/toddler-toys"
+          },
+          {
+            "label": "OEM/ODM 深度定制",
+            "href": "/products/custom-oem"
+          }
+        ]
+      },
+      {
+        "title": "核心实力",
+        "links": [
+          {
+            "label": "FSC 森林生态认证",
+            "href": "/about"
+          },
+          {
+            "label": "欧盟 EN71 安全标准",
+            "href": "/about"
+          },
+          {
+            "label": "7 天快速打样通道",
+            "href": "/contact"
+          },
+          {
+            "label": "无尘水性漆智造线",
+            "href": "/about"
+          }
+        ]
+      },
+      {
+        "title": "客户案例",
+        "links": [
+          {
+            "label": "欧洲母婴独立站爆款实录",
+            "href": "/cases/european-d2c-success"
+          },
+          {
+            "label": "北美幼教机构教具配套",
+            "href": "/cases/montessori-kindergarten"
+          },
+          {
+            "label": "东南亚玩具连锁大单交付",
+            "href": "/cases/asean-retail-order"
+          }
+        ]
+      },
+      {
+        "title": "关于与联系",
+        "links": [
+          {
+            "label": "关于木乐淘工厂",
+            "href": "/about"
+          },
+          {
+            "label": "批发与阶梯定价",
+            "href": "/pricing"
+          },
+          {
+            "label": "早教与出海资讯",
+            "href": "/blog"
+          },
+          {
+            "label": "联系我们 (RFQ)",
+            "href": "/contact"
+          }
+        ]
+      }
+    ],
+    "compliance": {
+      "copyright": "© 2015-2026 浙江木乐淘儿童用品有限公司 版权所有。",
+      "icp": "浙ICP备2026066888号-1",
+      "police": "浙公网安备 33112102000888号",
+      "legals": [
+        {
+          "label": "知识产权声明",
+          "href": "/legal/ip"
+        },
+        {
+          "label": "隐私保护政策",
+          "href": "/legal/privacy"
+        },
+        {
+          "label": "质量质保条款",
+          "href": "/legal/quality"
+        }
+      ]
+    }
+  },
+  "Breadcrumbs": {
+    "separator": "/",
+    "homeLabel": "首页",
+    "homeHref": "/"
+  },
+  "SolutionsHubHero": {
+    "badge": "儿童环保木制玩具全系目录",
+    "title": "激发幼儿创造力与空间思维的优质早教教具",
+    "subtitle": "精选全球优质 FSC 原木，搭配德国无毒水性漆，涵盖蒙台梭利教具、平衡积木与感统训练玩具，满足海外品牌商多元化采购需求。"
+  },
+  "SolutionCategoryNav": {
+    "categories": [
+      {
+        "id": "all",
+        "label": "全部玩具与教具",
+        "active": true
+      },
+      {
+        "id": "montessori",
+        "label": "蒙台梭利早教系列",
+        "active": false
+      },
+      {
+        "id": "blocks",
+        "label": "彩虹平衡积木专区",
+        "active": false
+      },
+      {
+        "id": "toddler",
+        "label": "婴幼儿感统益智",
+        "active": false
+      },
+      {
+        "id": "custom",
+        "label": "OEM/ODM 礼盒定制",
+        "active": false
+      }
+    ]
+  },
+  "SolutionGrid": {
+    "items": [
+      {
+        "slug": "montessori-learning-box",
+        "name": "蒙特梭利多功能木制百宝箱",
+        "category": "蒙台梭利系列",
+        "process": "多合一早教认知 / 顺滑倒角",
+        "tolerance": "安全无毛刺 / 食品级涂层",
+        "material": "FSC 欧洲榉木 + 进口椴木",
+        "imageUrl": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1200&q=80",
+        "summary": "集形状配对、齿轮传动与磁性钓鱼于一体，全面锻炼 1-6 岁幼儿手眼协调与空间逻辑能力。"
+      },
+      {
+        "slug": "rainbow-balance-blocks",
+        "name": "彩虹大颗粒木制平衡积木",
+        "category": "积木与拼装",
+        "process": "莫兰迪马卡龙色系 / 开放式玩法",
+        "tolerance": "防吞咽大颗粒设计",
+        "material": "天然优质松木与环保硬木",
+        "imageUrl": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=1200&q=80",
+        "summary": "打破传统方块局限的仿生几何造型，培养儿童平衡力、专注力与色彩美学启蒙。"
+      },
+      {
+        "slug": "toddler-pull-toy",
+        "name": "婴儿早教多功能拖拉小车",
+        "category": "婴幼儿感统",
+        "process": "静音橡胶轮圈 / 柔和触感",
+        "tolerance": "严格通过 EN71 小零件测试",
+        "material": "天然实木环保抛光",
+        "imageUrl": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1200&q=80",
+        "summary": "陪伴学步期儿童的趣味伙伴，锻炼下肢协调力与抓握感知，陪伴快乐童年。"
+      },
+      {
+        "slug": "wooden-puzzle-board",
+        "name": "立体多层分层拼图认知板",
+        "category": "益智早教",
+        "process": "激光精细雕刻 / 环保水性印花",
+        "tolerance": "精准嵌入卡槽",
+        "material": "多层优质环保环保夹板",
+        "imageUrl": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1200&q=80",
+        "summary": "由浅入深的层级认知拼图，帮助宝宝理解生命成长与事物归类逻辑。"
+      }
+    ]
+  },
+  "PlatformCapabilities": {
+    "header": {
+      "badge": "生态智造基石",
+      "title": "四大现代化生产与质检车间",
+      "subtitle": "从原木物理平衡养护到全自动无尘涂装，确保每一件玩具都达到国际一线品牌品质。"
+    },
+    "capabilities": [
+      {
+        "title": "木材科学烘干与养护中心",
+        "stats": "含水率 8%-12% 恒控",
+        "desc": "科学平衡木材内应力，杜绝在不同气候温差下出现开裂或变形。"
+      },
+      {
+        "title": "全自动数控精雕与激光切割",
+        "stats": "40 台高精度设备",
+        "desc": "实现复杂几何造型的毫米级精准裁切，边缘平滑无毛刺。"
+      },
+      {
+        "title": "环保水性漆无尘喷涂流水线",
+        "stats": "6 条全自动喷涂线",
+        "desc": "采用德国进口食品级水性漆，无尘恒温烘干，漆膜均匀细腻无异味。"
+      },
+      {
+        "title": "国际标准物理实验室",
+        "stats": "EN71 / ASTM 全套测试",
+        "desc": "配备抗拉力测试仪、重金属分析仪与跌落测试机，出厂 100% 严格质检。"
+      }
+    ]
+  },
+  "SolutionHero": {
+    "category": "蒙台梭利热销爆款",
+    "title": "蒙特梭利多功能木制百宝箱 (Montessori Learning Box)",
+    "badge": "多合一早教认知 / FSC 认证原木 / 欧盟 EN71 标准",
+    "description": "专为 1-6 岁儿童精细动作开发设计。集成了形状配对、齿轮传动、数字认知等 6 大核心玩法。选用欧洲优质榉木，经多道人工与数控倒角打磨，所有涂层均为德国无毒水性漆。",
+    "specs": [
+      {
+        "label": "包装尺寸",
+        "value": "30cm × 20cm × 15cm"
+      },
+      {
+        "label": "产品净重",
+        "value": "2.2 kg"
+      },
+      {
+        "label": "主选材质",
+        "value": "FSC 认证欧洲榉木 + 进口椴木"
+      },
+      {
+        "label": "安全合规",
+        "value": "CE-EN71 Part 1/2/3, ASTM F963"
+      }
+    ]
+  },
+  "PainPointsVsSolutions": {
+    "header": {
+      "title": "彻底告别劣质玩具的安全隐患",
+      "subtitle": "针对传统塑料玩具异味释放、毛刺割伤及劣质油漆脱落痛点的全方位工艺升级。"
+    },
+    "comparison": [
+      {
+        "pain": "市面部分塑料玩具含有害增塑剂，且边缘锋利易划伤宝宝",
+        "solution": "选用 100% 天然 FSC 生态原木，所有边缘历经四道人工砂纸打磨与倒角，绝对圆润无毛刺。"
+      },
+      {
+        "pain": "劣质油漆经宝宝啃咬后易脱落并含有重金属成分",
+        "solution": "全线采用德国进口食品级水性无毒漆，无刺激性气味，耐唾液与汗液腐蚀，啃咬更安全。"
+      },
+      {
+        "pain": "木材未经科学烘干在潮湿或干燥环境下极易开裂变形",
+        "solution": "历经 21 天科学蒸汽烘干与含水率平衡处理，严格将水分控制在 10% 黄金区间，历久弥新。"
+      }
+    ]
+  },
+  "TechArchitecture": {
+    "header": {
+      "badge": "安全结构解析",
+      "title": "多维安全防护与人体工学设计",
+      "subtitle": "从零部件尺寸到表面涂层的严苛工程解构。"
+    },
+    "layers": [
+      {
+        "name": "01. FSC 生态原木基底",
+        "detail": "精选优质硬木，质地坚韧耐摔，天然木纹温润不冰冷。"
+      },
+      {
+        "name": "02. 360° 全圆角手工精磨",
+        "detail": "彻底消除所有锐利直角，保障婴幼儿抓握时的绝对物理安全。"
+      },
+      {
+        "name": "03. 德国无毒水性漆保护膜",
+        "detail": "多层渗透喷涂，锁住木材天然质感，防水防污且不褪色。"
+      },
+      {
+        "name": "04. 超大防吞咽尺寸设计",
+        "detail": "所有可拆卸小零件均超出国际标准安全尺寸，杜绝误吞风险。"
+      }
+    ]
+  },
+  "UseCasesTab": {
+    "tabs": [
+      {
+        "id": "family",
+        "label": "家庭亲子早教",
+        "desc": "陪伴式感统训练与亲子互动，培养孩子良好的专注力与独立思考习惯。"
+      },
+      {
+        "id": "kindergarten",
+        "label": "蒙台梭利幼儿园",
+        "desc": "高频使用场景下的耐用教具配套，符合幼教机构严苛的卫生与安全规范。"
+      },
+      {
+        "id": "ecommerce",
+        "label": "跨境电商与独立站",
+        "desc": "自带精美礼盒包装，完美适配海外 DTC 独立站及亚马逊精品买家畅销爆款。"
+      }
+    ]
+  },
+  "RelatedCaseStudyCard": {
+    "title": "相关成功交付案例",
+    "caseTitle": "欧洲母婴独立站品牌：定制款蒙氏教具系列 30 天闪电交付",
+    "summary": "针对海外客户对包装及潘通色号的独特要求，木乐淘设计团队仅用 5 天完成打样，大货首批 5,000 套零瑕疵交付，助力客户独立站销售额增长 150%。",
+    "href": "/cases/european-d2c-success",
+    "stats": "7天打样 / 30天量产交付"
+  },
+  "CaseFilterBar": {
+    "filters": [
+      {
+        "label": "全部案例",
+        "key": "all",
+        "active": true
+      },
+      {
+        "label": "欧洲独立站",
+        "key": "eu",
+        "active": false
+      },
+      {
+        "label": "北美早教机构",
+        "key": "na",
+        "active": false
+      },
+      {
+        "label": "东南亚连锁零售",
+        "key": "asean",
+        "active": false
+      },
+      {
+        "label": "OEM/ODM 定制",
+        "key": "custom",
+        "active": false
+      }
+    ]
+  },
+  "CaseHeroCard": {
+    "badge": "年度出海标杆案例",
+    "title": "欧洲知名母婴品牌商：从概念设计到热销爆款的木制玩具智造实录",
+    "description": "通过深度参与客户的产品外观重构与 FSC 供应链溯源优化，帮助客户在激烈的欧洲环保母婴市场中脱颖而出，年采购额突破 200 万美元。",
+    "client": "法国母婴用品零售巨头 (脱敏)",
+    "tags": [
+      "FSC 认证",
+      "D2C 爆款打造",
+      "专属礼盒定制"
+    ],
+    "metrics": [
+      {
+        "label": "年复购率",
+        "value": "85%+"
+      },
+      {
+        "label": "客户满意度",
+        "value": "99.8%"
+      },
+      {
+        "label": "产品溢价空间",
+        "value": "+35%"
+      }
+    ],
+    "href": "/cases/european-d2c-success"
+  },
+  "CaseGrid": {
+    "cases": [
+      {
+        "title": "北美蒙台梭利幼教集团：20 家园区木制教具标准化统配",
+        "category": "早教机构配套",
+        "metrics": "耐用度提升 50% / 无毒环保",
+        "desc": "根据北美蒙氏教学大纲定制开发 12 款大颗粒建构教具，完美经受高频次儿童使用考验。",
+        "href": "/cases/montessori-kindergarten"
+      },
+      {
+        "title": "东南亚母婴连锁零售：彩虹平衡积木夏季大促百万级备货",
+        "category": "连锁零售供应链",
+        "metrics": "30 天交付 20,000 套",
+        "desc": "依托 6 条全自动喷涂线与充足原木储备，在旺季前按时交付高品质马卡龙色系积木。",
+        "href": "/cases/asean-retail-order"
+      },
+      {
+        "title": "德国环保玩具独立站：专属 Logo 激光雕刻与牛皮纸礼盒定制",
+        "category": "独立站 DTC 定制",
+        "metrics": "MOQ 500套灵活起订",
+        "desc": "提供一站式品牌视觉包装与 FSC 环保溯源标签贴标，助力新锐品牌快速打开市场。",
+        "href": "/cases/german-d2c-branding"
+      }
+    ]
+  },
+  "CaseDetailHeader": {
+    "title": "欧洲知名母婴品牌商：定制款蒙氏教具系列出海实录",
+    "subtitle": "从外观美学升级、FSC 环保溯源到 30 天大货量产的供应链全记录",
+    "meta": [
+      {
+        "label": "合作周期",
+        "value": "2025.08 - 2026.09 (长期战略伙伴)"
+      },
+      {
+        "label": "目标市场",
+        "value": "法国、德国、英国等西欧国家"
+      },
+      {
+        "label": "核心服务",
+        "value": "ODM 联合研发 + FSC 认证 + 环保水性漆"
+      },
+      {
+        "label": "累计交付",
+        "value": "50,000+ 套 (客户好评率 99.4%)"
+      }
+    ]
+  },
+  "CaseDetailBody": {
+    "sections": [
+      {
+        "title": "一、 客户痛点与出海挑战",
+        "content": "该欧洲品牌原先采用代工厂的通用塑料玩具，在注重生态环保的欧洲市场遭遇了增长瓶颈，消费者对塑料制品的微塑料担忧与日俱增。同时，原供应商交货期不稳定、水性漆偶有异味导致退货率偏高。"
+      },
+      {
+        "title": "二、 木乐淘团队的解决方案",
+        "content": "我们为其量身定制了全套“原木+蒙氏教育”转型方案。不仅将材质全部替换为 100% FSC 认证的欧洲榉木，还升级了德国无尘水性漆喷涂工艺，确保气味清香自然。同时通过开模定制专属的莫兰迪色系，完美契合欧洲现代极简家居美学。"
+      },
+      {
+        "title": "三、 市场反响与长期合作成果",
+        "content": "新品上市首月即登上亚马逊欧洲站同品类 Best Seller 榜单，独立站复购率大幅提升。客户评价木乐淘不仅是制造工厂，更是其拓展全球环保儿童玩具版图的最强创新后盾。"
+      }
+    ]
+  },
+  "ExecutiveQuoteBanner": {
+    "quote": "木乐淘在木制玩具的环保涂层工艺与 FSC 供应链溯源上展现了极高的专业度。他们对欧洲玩具安全标准的深刻理解，让我们完全不用担心海关合规与海外消费者的信任问题。",
+    "author": "Antoine Dupont",
+    "title": "供应链与采购副总裁",
+    "company": "欧洲顶尖生态母婴用品集团"
+  },
+  "AboutHero": {
+    "badge": "11 年专注环保木制玩具智造",
+    "title": "把自然的纯净与安全带给全球每一位儿童",
+    "subtitle": "扎根中国“童话之乡”，连接全球绿色童年。以 25,000 ㎡ 生态制造基地、严苛的 EN71 / FSC 体系与匠心设计，驱动中国优质木制玩具走向世界。",
+    "image": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1200&q=80"
+  },
+  "Timeline": {
+    "events": [
+      {
+        "year": "2015",
+        "title": "公司创立与木制玩具起步",
+        "desc": "在浙江云和设立小型木作工坊，专注于传统木质益智拼图与手推玩具制造。"
+      },
+      {
+        "year": "2018",
+        "title": "全面引入 FSC 认证与欧盟标准",
+        "desc": "建立标准化原木恒温养护车间，全面通过 FSC 森林认证与欧盟 CE-EN71 质检。"
+      },
+      {
+        "year": "2021",
+        "title": "扩建 25,000 ㎡ 生态智造基地",
+        "desc": "引入 6 条全自动无尘水性漆喷涂流水线与激光数控雕刻设备，产能实现跨越式增长。"
+      },
+      {
+        "year": "2024",
+        "title": "深耕蒙台梭利教具与跨境电商供应链",
+        "desc": "组建独立儿童玩具设计研发中心，服务全球超 40 家头部母婴品牌与独立站买家。"
+      },
+      {
+        "year": "2026",
+        "title": "绿色智慧工厂与全球化战略升级",
+        "desc": "实现全面数字化柔性生产，支持全球小批量快反定制与一件代发海外仓服务。"
+      }
+    ]
+  },
+  "TeamGrid": {
+    "header": {
+      "badge": "资深专家团队",
+      "title": "拥有多年儿童教育与木作美学积淀的伙伴",
+      "subtitle": "核心设计与质检团队拥有平均超 12 年的玩具研发与国际合规背景。"
+    },
+    "members": [
+      {
+        "name": "陈晓峰 (David Chen)",
+        "role": "创始人 & 总经理",
+        "bio": "20 年木制玩具行业实战专家，专注 FSC 可持续供应链建设与全球母婴品牌出海战略。",
+        "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "name": "林梦琪 (Maggie Lin)",
+        "role": "儿童玩具首席设计师",
+        "bio": "毕业于中国美术学院工业设计系，擅长莫兰迪色彩美学与蒙台梭利开放式教具创新开发。",
+        "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80"
+      },
+      {
+        "name": "Hans Müller",
+        "role": "国际质量与合规总监",
+        "bio": "德国籍玩具安全质检专家，严格把控 EN71、ASTM 与化学重金属迁移检测标准。",
+        "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80"
+      }
+    ]
+  },
+  "ComplianceAwards": {
+    "header": {
+      "badge": "国际权威资质认证",
+      "title": "严格遵循全球最严苛的儿童玩具安全标准",
+      "subtitle": "完备的合规证书与环保资质，为您扫清海外市场准入的一切障碍。"
+    },
+    "awards": [
+      {
+        "code": "FSC-COC",
+        "name": "森林管理委员会产销监管链认证",
+        "org": "SGS / Preferred by Nature",
+        "badge": "Core"
+      },
+      {
+        "code": "CE-EN71",
+        "name": "欧盟玩具安全标准 (Part 1/2/3)",
+        "org": "德国 TÜV 莱茵实验室认证"
+      },
+      {
+        "code": "ASTM F963",
+        "name": "美国玩具安全标准规范认证",
+        "org": "Intertek 天祥集团认证"
+      },
+      {
+        "code": "ISO 9001:2015",
+        "name": "国际质量管理体系认证",
+        "org": "SGS 通标公司认证"
+      }
+    ]
+  },
+  "PricingHeader": {
+    "badge": "透明阶梯批发体系",
+    "title": "灵活适配从 7 天快速打样到百万级量产",
+    "subtitle": "清晰界定打样费、大货阶梯折扣与定制包装开支，真正做到省心、透明、高性价比。"
+  },
+  "TierCards": {
+    "tiers": [
+      {
+        "id": "sample",
+        "name": "快速打样与样品试制 (Sample Order)",
+        "priceTag": "按个计费",
+        "leadTime": "5 - 7 个工作日",
+        "target": "新品评估与独立站样品拍摄",
+        "features": [
+          "现货/定制手板模型快速切削",
+          "提供官方 EN71 & FSC 材质证明",
+          "支持寄送至全球指定海外地址",
+          "资深玩具设计师 1 对 1 跟进"
+        ],
+        "cta": {
+          "label": "立即申请样品试制",
+          "href": "/contact",
+          "variant": "outline"
+        }
+      },
+      {
+        "id": "pilot",
+        "name": "中小批量试销 (Pilot Batch)",
+        "badge": "跨境独立站首选",
+        "priceTag": "梯度批发价",
+        "leadTime": "15 - 20 个工作日",
+        "target": "新品上架测试与季节性爆款备货 (300 - 1,000 套)",
+        "features": [
+          "支持混批与定制专属外箱标签",
+          "提供高清白底图与短视频素材包",
+          "严格执行 AQL 2.5 抽检出货标准",
+          "协助对接快捷空运或海外仓头程"
+        ],
+        "cta": {
+          "label": "获取批发价目表",
+          "href": "/contact",
+          "variant": "primary"
+        }
+      },
+      {
+        "id": "mass-production",
+        "name": "品牌大货量产 (Mass Production)",
+        "priceTag": "尊享大客户年降",
+        "leadTime": "20 - 25 个工作日",
+        "target": "全球母婴连锁与大品牌长期供应链 (1,000 套以上)",
+        "features": [
+          "专线无尘车间排产，保质保量交付",
+          "全套定制礼盒包装与 Logo 雕刻",
+          "支持长期战略协议年终阶梯返利政策",
+          "支持灵活的外汇结算与信用证条款"
+        ],
+        "cta": {
+          "label": "预约大客户业务经理",
+          "href": "/contact",
+          "variant": "secondary"
+        }
+      }
+    ]
+  },
+  "FeatureComparisonTable": {
+    "columns": [
+      "合作与服务支持维度",
+      "样品试制",
+      "中小批量试销",
+      "品牌大货量产"
+    ],
+    "rows": [
+      {
+        "category": "交付周期",
+        "proto": "5 - 7 天",
+        "pilot": "15 - 20 天",
+        "mass": "20 - 25 天"
+      },
+      {
+        "category": "最小起订量 (MOQ)",
+        "proto": "1 套起测",
+        "pilot": "300 套起批",
+        "mass": "1,000 套起定"
+      },
+      {
+        "category": "专属包装与 Logo 定制",
+        "proto": "支持激光雕刻",
+        "pilot": "支持定制外箱/贴标",
+        "mass": "全套礼盒与内衬定制"
+      },
+      {
+        "category": "质检与合规报告",
+        "proto": "随货附带材质证明",
+        "proto_check": true,
+        "pilot": "AQL 2.5 标准抽检",
+        "mass": "100% 独立质检报告"
+      },
+      {
+        "category": "营销素材支持",
+        "proto": "提供基础图片",
+        "pilot": "提供高清图包与白底图",
+        "mass": "全套短视频与展厅素材"
+      },
+      {
+        "category": "物流与履约服务",
+        "proto": "国际快递直发",
+        "pilot": "空运 / 专线物流",
+        "mass": "整柜海运 / DDP 到门"
+      }
+    ]
+  },
+  "PricingFAQ": {
+    "header": {
+      "badge": "商务与价格释疑",
+      "title": "关于批发与定制报价的常见问题",
+      "subtitle": "起订量、运费核算与样品费退还政策的透明解答。"
+    },
+    "items": [
+      {
+        "question": "如果后续批量订购，前期支付的样品费可以退还吗？",
+        "answer": "当您后续的正式大货订单金额达到指定额度（如满 5,000 美元）时，我们将在首笔大货尾款中 100% 全额抵扣或返还前期支付的样品打样费。"
+      },
+      {
+        "question": "是否可以为我们的新锐品牌提供免 LOGO 中性包装？",
+        "answer": "可以。我们支持中性环保牛皮纸盒包装，不带有任何木乐淘工厂标识，方便您直接以自己品牌的名义贴标出海。"
+      },
+      {
+        "question": "海运拼箱或整柜的运费是如何计算的？",
+        "answer": "我们会根据您的交货目的地（如欧洲仓、北美亚马逊 FBA 仓库或门到门地址）为您匹配最具性价比的货代货盘，提供透明的 FOB、CIF 或 DDP 报价。"
+      }
+    ]
+  },
+  "MinimalHeader": {
+    "brandName": "Moletao Kids",
+    "logoUrl": "/images/brand/logo.svg",
+    "backHomeUrl": "/"
+  },
+  "SplitContactSection": {
+    "header": {
+      "badge": "快速对接业务经理",
+      "title": "索取最新产品目录与批发报价",
+      "subtitle": "填写您的需求与联系方式，我们的海外业务经理将在 2 小时内与您联络，免费寄送高清产品电子目录与样品册。"
+    },
+    "features": [
+      {
+        "title": "100% 隐私安全保护",
+        "desc": "严格保护您的商业联系方式与定制设计图纸，绝不外泄。"
+      },
+      {
+        "title": "7 天快速打样支持",
+        "desc": "资深木作设计师团队为您提供专业且高效的打样响应。"
+      },
+      {
+        "title": "直连源头工厂",
+        "desc": "无中间商赚差价，享受最具竞争力的源头批发与定制价格。"
+      }
+    ],
+    "form": {
+      "namePlaceholder": "您的姓名 / 职务",
+      "emailPlaceholder": "常用工作邮箱 (接收产品目录)",
+      "companyPlaceholder": "您的企业名称 / 独立站网址",
+      "projectPlaceholder": "您的采购需求说明 (如：蒙氏百宝箱 500套 / 定制包装)",
+      "fileUploadNote": "支持上传设计图纸或参考图片 (可选，最大 20MB)",
+      "submitButtonText": "立即提交并索取批发报价与目录",
+      "ndaCheckboxText": "我希望在交流前签署双向保密协议 (NDA)"
+    }
+  },
+  "DirectSupportChannels": {
+    "title": "直连木乐淘全球业务与客服中心",
+    "channels": [
+      {
+        "type": "咨询热线",
+        "value": "+86 (578) 6688-8888",
+        "action": "tel:+865786688888",
+        "desc": "周一至周日 08:30 - 20:00 (GMT+8)"
+      },
+      {
+        "type": "即时通讯",
+        "value": "WhatsApp: +86 138 1234 5678",
+        "action": "https://wa.me/8613812345678",
+        "desc": "海外客户 24 小时极速留言通道"
+      },
+      {
+        "type": "商务邮箱",
+        "value": "rfq@moletaokids.com",
+        "action": "mailto:rfq@moletaokids.com",
+        "desc": "支持大附件图纸与询盘直投"
+      }
+    ]
+  },
+  "CompactFooter": {
+    "copyright": "© 2015-2026 浙江木乐淘儿童用品有限公司 保留所有权利。",
+    "icp": "浙ICP备2026066888号-1",
+    "links": [
+      {
+        "label": "返回官网首页",
+        "href": "/"
+      },
+      {
+        "label": "知识产权声明",
+        "href": "/legal/ip"
+      },
+      {
+        "label": "隐私保护政策",
+        "href": "/legal/privacy"
+      }
+    ]
+  },
+  "FeaturedPost": {
+    "badge": "重磅早教行业洞察",
+    "title": "2026 年全球环保木制玩具市场趋势：可持续材料与蒙台梭利教育的深度融合",
+    "excerpt": "深入解析海外买家对 FSC 认证原木及无毒水性漆玩具的最新严苛诉求，助您的跨境玩具品牌精准布局全球市场。",
+    "author": "陈晓峰 (创始人)",
+    "date": "2026-03-30",
+    "readTime": "8 分钟阅读",
+    "coverImage": "https://images.unsplash.com/photo-1566576912321-d58ddd7a6088?auto=format&fit=crop&w=1200&q=80",
+    "href": "/blog/market-trends-2026"
+  },
+  "CategoryNav": {
+    "categories": [
+      {
+        "id": "all",
+        "label": "全部早教文章",
+        "active": true
+      },
+      {
+        "id": "trends",
+        "label": "行业洞察与趋势",
+        "active": false
+      },
+      {
+        "id": "montessori",
+        "label": "蒙台梭利教育法",
+        "active": false
+      },
+      {
+        "id": "safety",
+        "label": "欧盟 EN71 标准",
+        "active": false
+      },
+      {
+        "id": "procurement",
+        "label": "幼儿园采购指南",
+        "active": false
+      }
+    ]
+  },
+  "ArticleGrid": {
+    "articles": [
+      {
+        "title": "如何为幼儿园与托育中心选择安全的早教木制教具？采购指南与标准解析",
+        "category": "幼儿园采购指南",
+        "date": "2026-03-25",
+        "excerpt": "全面解析国际托育机构在采购木制玩具时的物理安全、重金属涂层标准及高频耐用性指标。",
+        "cover": "https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?auto=format&fit=crop&w=1200&q=80",
+        "href": "/blog/kindergarten-procurement-guide"
+      },
+      {
+        "title": "告别微塑料焦虑：为什么 2026 年欧美新生代父母更青睐天然木制玩具？",
+        "category": "行业洞察与趋势",
+        "date": "2026-03-12",
+        "excerpt": "从儿童触觉发育与循环经济理念出发，探讨环保原木玩具在海外独立站持续走红的深层逻辑。",
+        "cover": "https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=1200&q=80",
+        "href": "/blog/eco-wooden-toys-popularity"
+      },
+      {
+        "title": "一文看懂欧盟 CE-EN71 与美国 ASTM F963 玩具安全标准的核心差异",
+        "category": "欧盟 EN71 标准",
+        "date": "2026-02-28",
+        "excerpt": "详细对比欧美两大玩具合规体系的机械物理性能测试与化学迁移限量要求，助力玩具顺利出海。",
+        "cover": "https://images.unsplash.com/photo-1587654780291-39c9404d746b?auto=format&fit=crop&w=1200&q=80",
+        "href": "/blog/en71-vs-astm-standards"
+      }
+    ]
+  },
+  "Pagination": {
+    "currentPage": 1,
+    "totalPages": 4,
+    "hasPrev": false,
+    "hasNext": true,
+    "prevUrl": null,
+    "nextUrl": "/blog/page/2"
+  },
+  "NewsletterSection": {
+    "title": "订阅木乐淘儿童玩具出海内参",
+    "subtitle": "每月精选一篇蒙台梭利教具研发白皮书、欧盟玩具合规指南与海外选品动态，直接发送到您的邮箱。",
+    "placeholder": "请输入您的工作邮箱...",
+    "buttonText": "免费订阅"
+  },
+  "ProgressHeader": {
+    "articleTitle": "2026 年全球环保木制玩具市场趋势：可持续材料与蒙台梭利教育的深度融合",
+    "backUrl": "/blog",
+    "shareOptions": [
+      "LinkedIn",
+      "Twitter",
+      "Email"
+    ]
+  },
+  "ArticleHeader": {
+    "title": "2026 年全球环保木制玩具市场趋势：可持续材料与蒙台梭利教育的深度融合",
+    "category": "行业洞察与趋势",
+    "author": {
+      "name": "陈晓峰 (创始人)",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80",
+      "title": "20 年儿童木制玩具智造与出海专家"
+    },
+    "publishedAt": "2026-03-30",
+    "readTime": "8 分钟阅读"
+  },
+  "ArticleBodyWrapper": {
+    "toc": [
+      {
+        "id": "section-1",
+        "title": "1. 为什么 FSC 认证与生态原木成为海外买家首选？"
+      },
+      {
+        "id": "section-2",
+        "title": "2. 蒙台梭利教育理念驱动早教教具持续升级"
+      },
+      {
+        "id": "section-3",
+        "title": "3. 跨境独立站玩具选品与供应链合规策略"
+      },
+      {
+        "id": "section-4",
+        "title": "4. 结语：中国玩具制造商的品牌出海机遇"
+      }
+    ],
+    "contentHtml": "<p>随着全球对儿童早期教育质量与生态可持续发展的关注度持续攀升，2026 年的国际玩具市场正在经历深刻的结构性变革...</p>"
+  },
+  "ArticleFooterBar": {
+    "tags": [
+      "Market Trends",
+      "Montessori",
+      "Eco-Friendly",
+      "B2B Export"
+    ],
+    "copyrightNotice": "本文系木乐淘儿童用品原创，转载请注明来源并附带原文链接。"
+  },
+  "AuthorBioCard": {
+    "authorName": "陈晓峰 (David Chen)",
+    "title": "浙江木乐淘儿童用品有限公司创始人 & 总经理",
+    "bio": "深耕儿童木制玩具行业 20 余年，致力于推动中国优质环保玩具走向全球。",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=400&q=80"
+  },
+  "RelatedPosts": {
+    "title": "推荐延伸阅读",
+    "posts": [
+      {
+        "title": "如何为幼儿园与托育中心选择安全的早教木制教具？",
+        "href": "/blog/kindergarten-procurement-guide"
+      }
+    ]
+  },
+  "LegalHeader": {
+    "title": "知识产权声明、商标保护与合规条款",
+    "lastUpdated": "2026-01-15",
+    "version": "v2026.1"
+  },
+  "LegalLayoutWrapper": {
+    "sidebarSections": [
+      {
+        "id": "ip-ownership",
+        "title": "1. 网站内容与知识产权归属"
+      },
+      {
+        "id": "trademark",
+        "title": "2. 商标与品牌视觉使用规范"
+      },
+      {
+        "id": "privacy",
+        "title": "3. 客户隐私数据收集与保护"
+      },
+      {
+        "id": "compliance",
+        "title": "4. 玩具安全合规免责声明"
+      }
+    ],
+    "contentHtml": "<p>浙江木乐淘儿童用品有限公司运营的官方网站及其所有内容均受中华人民共和国著作权法及国际知识产权公约保护...</p>"
+  },
+  "NotFoundSection": {
+    "statusCode": "404",
+    "title": "抱歉，您访问的玩具页面或早教教具未找到",
+    "description": "可能该产品型号已更新归档，或您输入的访问路径有误。您可以返回产品中心查看最新环保木制玩具。",
+    "actions": [
+      {
+        "label": "返回官网首页",
+        "href": "/",
+        "variant": "primary"
+      },
+      {
+        "label": "浏览产品中心",
+        "href": "/products",
+        "variant": "secondary"
+      }
+    ]
+  },
+  "MinimalFooter": {
+    "copyright": "© 2015-2026 浙江木乐淘儿童用品有限公司 保留所有权利。",
+    "beian": "浙ICP备2026066888号-1"
+  },
+  "SuccessSection": {
+    "title": "您的询盘与需求已成功提交！",
+    "subtitle": "我们的海外业务经理与玩具设计师已收到您的项目消息，将在 24 小时内向您回寄产品样品目录与批发报价单。",
+    "timeline": [
+      {
+        "status": "已接收",
+        "time": "即时",
+        "desc": "系统已自动录入 CRM 并生成项目编号"
+      },
+      {
+        "status": "业务初审",
+        "time": "2 小时内",
+        "desc": "专属业务经理确认您的产品款式与定制需求"
+      },
+      {
+        "status": "正式回寄",
+        "time": "24 小时内",
+        "desc": "向您的邮箱发送高清电子目录与阶梯批发价"
+      }
+    ],
+    "returnHomeText": "返回官网首页",
+    "returnHomeUrl": "/"
+  }
+}

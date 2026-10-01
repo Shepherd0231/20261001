@@ -1,0 +1,64 @@
+---
+/**
+ * Container — Foundation 层通用容器
+ *
+ * 职责：
+ *  - 约束最大宽度（默认 max-w-7xl = 1280px）
+ *  - 水平居中 + 响应式左右内边距
+ *  - 接受任意子内容（slot）
+ *
+ * 设计原则（与 pages.json / components.json 解耦）：
+ *  - 不依赖任何 JSON schema 字段
+ *  - props 全部为可选（默认值齐全）
+ *  - 后续 JSON 更新不影响本组件
+ *
+ * 用法：
+ *   <Container>...</Container>
+ *   <Container maxWidth="6xl" padding="lg">...</Container>
+ *   <Container as="article" class="bg-card">...</Container>
+ */
+
+type ContainerTag = 'div' | 'section' | 'article' | 'main' | 'aside' | 'header' | 'footer' | 'nav';
+type PaddingLevel = 'none' | 'sm' | 'md' | 'lg' | 'xl';
+
+interface Props {
+  /** 自定义最大宽度（Tailwind 类，如 "6xl" / "5xl" / "full" 或自定义 "[1400px]"） */
+  maxWidth?: string;
+  /** 水平内边距档位（默认 md: 4 / 6 / 8） */
+  padding?: PaddingLevel;
+  /** 渲染标签（默认 div，便于语义化升级） */
+  as?: ContainerTag;
+  /** 附加类名 */
+  class?: string;
+  /** 容器内 ID（用于锚点跳转） */
+  id?: string;
+}
+
+const {
+  maxWidth = '7xl',
+  padding = 'md',
+  as: Tag = 'div',
+  class: className = '',
+  id,
+} = Astro.props;
+
+const paddingMap: Record<PaddingLevel, string> = {
+  none: '',
+  sm: 'px-3 sm:px-4',
+  md: 'px-4 md:px-6 lg:px-8',
+  lg: 'px-4 sm:px-6 md:px-8 lg:px-12',
+  xl: 'px-6 sm:px-8 md:px-12 lg:px-16',
+};
+
+const cls = [
+  'mx-auto w-full',
+  maxWidth === 'full' ? 'max-w-full' : `max-w-${maxWidth}`,
+  paddingMap[padding],
+  className,
+]
+  .filter(Boolean)
+  .join(' ');
+---
+<Tag id={id} class={cls}>
+  <slot />
+</Tag>

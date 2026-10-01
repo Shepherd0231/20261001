@@ -1,0 +1,62 @@
+{
+  "MarketingLayout": {
+    "nameCn": "营销型布局 (Marketing Layout)",
+    "description": "多语言通用的营销页骨架。不硬编码语言和组件，动态接收 lang、title、description 属性，所有业务组件均由 pages.json 中的 sections 驱动。",
+    "structure": {
+      "htmlLang": "dynamic (e.g. Astro.currentLocale or props.lang)",
+      "head": [
+        "meta charset='UTF-8'",
+        "meta name='viewport' content='width=device-width, initial-scale=1.0'",
+        "dynamic title",
+        "dynamic description"
+      ],
+      "bodyClasses": "bg-white text-gray-900 antialiased selection:bg-emerald-100 selection:text-emerald-800",
+      "slots": [
+        {
+          "name": "default",
+          "description": "页面主体插槽，用于承载 sections 动态渲染出来的所有组件"
+        }
+      ]
+    }
+  },
+  "ContentLayout": {
+    "nameCn": "内容与列表型布局 (Content Layout)",
+    "description": "多语言通用的内容型页面骨架（适用于产品列表、详情、博客等），动态绑定 lang 属性与 SEO 元数据。",
+    "structure": {
+      "htmlLang": "dynamic (e.g. Astro.currentLocale or props.lang)",
+      "head": [
+        "meta charset='UTF-8'",
+        "meta name='viewport' content='width=device-width, initial-scale=1.0'",
+        "dynamic title",
+        "dynamic description"
+      ],
+      "bodyClasses": "bg-gray-50 text-gray-900 antialiased",
+      "slots": [
+        {
+          "name": "default",
+          "description": "页面主体插槽，用于承载各项内容组件"
+        }
+      ]
+    }
+  },
+  "FocusLayout": {
+    "nameCn": "沉浸式聚焦布局 (Focus Layout)",
+    "description": "多语言通用的聚焦页骨架（适用于联系我们/RFQ、404等），动态绑定 lang 属性。",
+    "structure": {
+      "htmlLang": "dynamic (e.g. Astro.currentLocale or props.lang)",
+      "head": [
+        "meta charset='UTF-8'",
+        "meta name='viewport' content='width=device-width, initial-scale=1.0'",
+        "dynamic title",
+        "dynamic description"
+      ],
+      "bodyClasses": "bg-slate-50 text-gray-900 antialiased flex flex-col min-h-screen justify-between",
+      "slots": [
+        {
+          "name": "default",
+          "description": "聚焦内容插槽"
+        }
+      ]
+    }
+  }
+}
